@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel='stylesheet' href='./Index.css'>
+    <link href="https://fonts.googleapis.com/css2?family=Inter" rel='stylesheet' />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+</head>
+
+<body>
+    <div class='over' id='over'>
+        <div class='container'>
+            <i class="material-symbols-outlined" id='close'>close</i>
+            <p class='text' data-testid="gameInstructions">
+                🎨 <strong>Welcome to the Color Guessing Game!</strong> 🎨<br>
+                Your goal is simple:<br>
+                1. Look at the <strong>target color</strong> displayed in the box above.<br>
+                2. Click on the color button that <strong>matches the target color</strong>.<br><br>
+                If you guess correctly, your score will increase, and a new round will start.<br>
+                If you're wrong, don't worry—just try again!<br><br>
+                Ready to test your color skills? Let's go! 🚀
+
+            </p>
+        </div>
+    </div>
+    <nav class='navbar'>
+        <p class='navtext'>HNG Task 2</p>
+    </nav>
+    <div class="game">
+        <section class='mainbox'>
+            <div class='top-score' id='top-score'>
+                <div class='score'>
+                    <div class='scoreIcon'>
+                        <i class="material-symbols-outlined">
+                            sports_score
+                        </i>
+                    </div>
+                    <div class='scoreText'>
+                        <p class='scorecount'>score: <b id='count' data-testid="score">0</b></p>
+                    </div>
+                </div>
+                <button id='newGame' data-testid="newGameButton">new game</button>
+            </div>
+            <div id='msg'>
+                <p id='win-msg' data-testid="gameStatus">ohhh yeaahhhhhh, you guessed correct!!</p>
+                <p id='lose-msg' data-testid="gameStatus">orhhhhh, you guessed wrong!!</p>
+            </div>
+            <div data-testid='colorBox' class='box' id='box'>.</div>
+        </section>
+        <section class='guessBoxContainer' data-testid="colorOption" id='guessBoxContainer'>
+        </section>
+    </div>
+    <script src="./Index.js"></script>
+</body>
+
+</html>

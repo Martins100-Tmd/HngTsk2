@@ -1,0 +1,183 @@
+* {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+}
+
+.navbar {
+   background-color: black;
+   padding: 1.5rem;
+   align-items: center;
+   width: 100%;
+}
+
+.navbar .navtext {
+   text-align: center;
+   color: white;
+   font-size: larger;
+   font-family: Inter;
+}
+
+.over {
+   background-color: rgba(0, 0, 0, 0.6);
+   width: 100%;
+   height: 100%;
+   position: absolute;
+   z-index: 40;
+   justify-content: center;
+   display: flex;
+}
+
+.over .container {
+   background-color: rgb(38, 38, 38);
+   text-align: center;
+   width: 40%;
+   height: 50%;
+   display: flex;
+   justify-content: center;
+   border-radius: 0.4rem;
+   margin: 10%;
+   z-index: 50;
+   flex-direction: column;
+   padding: 10px;
+}
+
+.over .container .text {
+   color: white;
+   align-self: center;
+   height: 83%;
+   font-size: 0.9rem;
+   font-family: Inter;
+}
+
+.over .container #close {
+   justify-content: end;
+   align-items: flex-end;
+   height: 17%;
+   align-self: flex-end;
+   color: white;
+   cursor: pointer;
+}
+
+.mainbox {
+   width: 60%;
+   height: 100px;
+   margin: 30px auto;
+}
+
+.mainbox .box {
+   background-color: blue;
+   border-radius: 0.2rem;
+   color: transparent;
+   min-width: 100%;
+   min-height: 100%;
+}
+.game {
+   display: flex;
+   flex-direction: column;
+   gap: 2rem;
+}
+
+.guessBoxContainer {
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   height: 70px;
+   width: 60%;
+   gap: 7px;
+   margin: 0 auto;
+}
+
+.guessBoxContainer .guessbox {
+   cursor: pointer;
+   border: none;
+   outline: none;
+   height: 100px;
+   border-radius: 0.5rem;
+}
+.top-score {
+   display: flex;
+   flex-direction: row;
+   width: 100%;
+   margin-bottom: 5px;
+   justify-content: space-between;
+}
+.top-score button {
+   border: 0;
+   outline: none;
+   border-radius: 0.3rem;
+   padding: 3px;
+   box-shadow: 3px #ffc;
+   font-size: inter;
+   font-family: Inter;
+}
+.score {
+   display: flex;
+   align-items: center;
+   flex-direction: row;
+   align-items: center;
+}
+.scoreIcon {
+   width: 30px;
+   height: 30px;
+   border-radius: 50%;
+   background-color: rgb(150, 150, 150);
+   align-items: center;
+   display: flex;
+   justify-content: center;
+   color: rgb(48, 48, 48);
+   padding-left: 2px;
+}
+.scoreText {
+   background-color: rgb(150, 150, 150);
+   padding: 1px 10px;
+   color: rgb(48, 48, 48);
+   margin-left: -3%;
+   font-weight: 600;
+   border-radius: 0 1rem 1rem 0;
+}
+.scoreText p {
+   font-size: 0.8rem;
+   font-family: Inter;
+}
+#msg {
+   display: flex;
+   justify-content: center;
+   position: absolute;
+   z-index: 100;
+   transition: ease-in-out 0.5s;
+   left: -100%;
+   border-radius: 0.3rem;
+}
+
+#win-msg {
+   display: none;
+   color: white;
+   font-family: Inter;
+   padding: 5px;
+   font-size: 1rem;
+   text-align: center;
+}
+#lose-msg {
+   display: none;
+   color: white;
+   font-family: Inter;
+   padding: 5px;
+   font-size: 1rem;
+   text-align: center;
+}
+
+@media (max-width: 640px) {
+   .guessBoxContainer {
+      width: 90%;
+      margin: 0 auto;
+      display: grid;
+   }
+   .mainbox {
+      width: 90%;
+      margin: 10px auto;
+      height: 60px;
+   }
+   .over .container {
+      width: 80%;
+   }
+}
