@@ -102,11 +102,11 @@ function showMessage(type) {
    if (type === 'win') {
       winMsg.style.display = 'flex';
       loseMsg.style.display = 'none';
-      Msg.style.backgroundColor = 'green';
+      Msg.style.backgroundColor = '#1B7D4F';
    } else {
       winMsg.style.display = 'none';
       loseMsg.style.display = 'flex';
-      Msg.style.backgroundColor = 'red';
+      Msg.style.backgroundColor = '#8B0000';
    }
    Msg.style.left = '3%';
    setTimeout(() => {
