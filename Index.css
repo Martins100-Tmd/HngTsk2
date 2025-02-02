@@ -3,7 +3,9 @@
    margin: 0;
    box-sizing: border-box;
 }
-
+body {
+   background-color: rgb(249, 249, 249);
+}
 .navbar {
    background-color: black;
    padding: 1.5rem;
@@ -31,23 +33,47 @@
 .over .container {
    background-color: rgb(38, 38, 38);
    text-align: center;
-   width: 40%;
-   height: 50%;
+   width: 55%;
+   height: 55%;
    display: flex;
    justify-content: center;
    border-radius: 0.4rem;
    margin: 10%;
    z-index: 50;
    flex-direction: column;
-   padding: 10px;
+   padding: 20px 10px;
 }
 
 .over .container .text {
-   color: white;
-   align-self: center;
+   display: flex;
+   flex-direction: column;
    height: 83%;
-   font-size: 0.9rem;
+   justify-content: space-evenly;
+}
+
+.over .container .text p {
    font-family: Inter;
+   color: white;
+   font-weight: 300;
+}
+
+.text p.ins {
+   font-family: Inter;
+   color: red;
+   text-align: start;
+   font-weight: 600;
+}
+.text ul {
+   gap: 10px;
+   display: flex;
+   flex-direction: column;
+}
+ul li {
+   font-family: Inter;
+   color: white;
+   font-size: 0.9rem;
+   text-align: start;
+   margin-left: 2rem;
 }
 
 .over .container #close {
@@ -144,7 +170,7 @@
    justify-content: center;
    position: absolute;
    z-index: 100;
-   transition: ease-in-out 0.5s;
+   transition: ease 1s;
    left: -100%;
    border-radius: 0.3rem;
 }

@@ -20,7 +20,7 @@ initGame();
 close.onclick = () => (messageContainer.style.display = 'none');
 newGameButton.onclick = startNewGame;
 
-// Functions
+window.onload = startNewGame;
 
 /**
  * Initialize the game
